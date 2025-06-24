@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR Book - শেখা এখন মজার</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📘 AR Book</h1>
+  <div class="tabs">
+    <button onclick="showPage('bangla')">📚 বাংলা বই</button>
+    <button onclick="showPage('english')">🔤 ইংরেজি বই</button>
+    <button onclick="showPage('arabic')">🕋 আরবি বই</button>
+    <button onclick="showPage('poem')">📖 কবিতা</button>
+    <button onclick="showPage('draw')">🎨 এসো আঁকি</button>
+    <button onclick="showPage('other')">🔎 অন্যান্য</button>
+  </div>
+
+  <!-- Subpages -->
+  <div id="bangla" class="subpage" style="display:none">
+    <h2>📚 বাংলা বই</h2>
+    <button onclick="showSub('sorborno')">স্বরবর্ণ</button>
+    <button onclick="showSub('banjonborno')">ব্যঞ্জনবর্ণ</button>
+    <button onclick="alert('🔖 কবিতা অপশন কাজ করছে...')">কবিতা</button>
+    <button onclick="alert('🧠 অন্যান্য কাজ চলছে...')">অন্যান্য</button>
+  </div>
+
+  <div id="sorborno" class="subpage" style="display:none">
+    <h2>স্বরবর্ণ</h2>
+    <div class="letters">
+      <div class="card"><div class="big-letter">অ</div><img src="https://i.ibb.co/44Y3Spq/snake.png"><p>অ-তে অজগরটি আসছে তেড়ে</p></div>
+      <div class="card"><div class="big-letter">আ</div><img src="https://i.ibb.co/8KsyjcP/aeroplane.png"><p>আ-তে আকাশে উড়ছে প্লেন</p></div>
+    </div>
+    <button onclick="goBack()">🔙 ফিরে যাও</button>
+  </div>
+
+  <div id="english" class="subpage" style="display:none">
+    <h2>🔤 ইংরেজি বই</h2>
+    <p>Working on English content...</p>
+  </div>
+
+  <div id="arabic" class="subpage" style="display:none">
+    <h2>🕋 আরবি বই</h2>
+    <p>Working on Arabic content...</p>
+  </div>
+
+  <div id="poem" class="subpage" style="display:none">
+    <h2>📖 বাংলা কবিতা</h2>
+    <button onclick="playPoem('poem1')">সকাল</button>
+    <button onclick="playPoem('poem2')">রাত</button>
+  </div>
+
+  <div id="draw" class="subpage" style="display:none">
+    <h2>🎨 এসো আঁকি</h2>
+    <canvas id="drawCanvas" width="300" height="300"></canvas>
+    <br /><button onclick="clearCanvas()">🧼 পরিষ্কার</button>
+  </div>
+
+  <div id="other" class="subpage" style="display:none">
+    <h2>🔎 অন্যান্য বিষয়</h2>
+    <p>More exciting content coming soon!</p>
+  </div>
+
+  <audio id="poemPlayer"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

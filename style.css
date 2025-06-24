@@ -1,0 +1,47 @@
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.tabs, .letters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tabs button, .letters button {
+  background-color: #03a9f4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 180px;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+}
+
+.big-letter {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
